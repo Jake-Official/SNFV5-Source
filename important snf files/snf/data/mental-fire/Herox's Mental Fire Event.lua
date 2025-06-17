@@ -174,8 +174,8 @@ function onSectionHit()
 	gameBeatZoom = false
 	cancelTween('bopping')
 	doTweenX("bopping", 'camHUD', 0, 0.75, 'sineInOut')
-	doTweenZoom("he zooms", 'camGame', 1.2, 1, 'sineIn')
-	doTweenAngle("rotate on a degree", 'camGame', 6, 1, 'sineIn')
+	doTweenZoom("he zooms", 'camGame', 1.2, 1.3, 'sineIn')
+	doTweenAngle("rotate on a degree", 'camGame', 6, 1.3, 'sineIn')
 	doTweenZoom("he zooms 2", 'camHUD', 1, 0.75, 'cubeOut')
 	setProperty('defaultCamZoom', 1)
 	end
