@@ -40,12 +40,12 @@ class Achievements {
 		createAchievement('sidestory3_nomiss',			{name: "Synning It", description: "Beat Side-Story 3 with no Misses."});
 		createAchievement('sidestory4_nomiss',			{name: "Ultimate Funkster'", description: "Beat Side-Story 4 with no Misses."});
 		createAchievement('ur_bad',				{name: "Playing like Lily", description: "Complete a Song with a rating lower than 20%."});
-		createAchievement('ur_good',				{name: "Perfectionist", description: "Complete a Song with a rating of 100%."});
+		createAchievement('ur_good',				{name: "Synergy", description: "Complete a Song with a rating of 100%."});
 		createAchievement('roadkill_enthusiast',		{name: "A Delicious Gourmet Meal", description: "Restart Monitor in \"Stained Mask\" 5 times.", maxScore: 5, maxDecimals: 0});
-		createAchievement('oversinging', 			{name: "Oversinging Much...?", description: "Sing for 10 seconds without going back to Idle."});
+		createAchievement('oversinging', 			{name: "STOP SINGING OOOUGHHHH", description: "Sing for 10 seconds without going back to Idle."});
 		createAchievement('hype',				{name: "Austism Spectrum", description: "Finish a Song without going back to Idle."});
-		createAchievement('two_keys',				{name: "Just the Two of Us", description: "Finish a Song pressing only two keys."});
-		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
+		createAchievement('two_keys',				{name: "Double Trouble", description: "Finish a Song pressing only two keys."});
+		createAchievement('toastie',				{name: "PotatOS", description: "Do you ever wonder why Potatos conduct electricity?"});
 		createAchievement('debugger',				{name: "Roach", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
 		
 		//dont delete this thing below
