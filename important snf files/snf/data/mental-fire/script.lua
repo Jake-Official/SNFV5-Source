@@ -1,5 +1,6 @@
 -- events coded by @monoaether
 
+--[[
 function onCreate()
     setProperty('defaultCamZoom', 2.0)
 
@@ -108,3 +109,4 @@ function onBeatHit()
         startTween('whitefade', 'white', {alpha = 0}, 1, {ease = 'linear'})
     end
 end
+]]
