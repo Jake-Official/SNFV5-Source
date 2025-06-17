@@ -23,6 +23,30 @@ makeLuaSprite('movementTween', 'fuck you movecam.lua?', 770, 705); -- opponent: 
 -- uh oh, the camera is now locked in place, now it can't move based on movement hits anymore.
 -- hmmm I got an idea though...
 
+makeLuaSprite('31', 'ha1', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
+setObjectCamera('31', 'camOther');
+scaleObject('31', 1, 1);
+addLuaSprite('31', false);
+setProperty('31.alpha', 0.001)
+
+makeLuaSprite('ready1', 'ha2', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
+setObjectCamera('ready1', 'camOther');
+scaleObject('ready1', 1, 1);
+addLuaSprite('ready1', false);
+setProperty('ready1.alpha', 0.001)
+
+makeLuaSprite('set1', 'ha3', screenWidth / 1.7 - 369, screenHeight / 1.8 - 185);
+setObjectCamera('set1', 'camOther');
+scaleObject('set1', 1, 1);
+addLuaSprite('set1', false);
+setProperty('set1.alpha', 0.001)
+
+makeLuaSprite('GO1', 'one', screenWidth / 1.5 - 569, screenHeight / 1.8 - 185);
+setObjectCamera('GO1', 'camOther');
+scaleObject('GO1', 1, 1);
+addLuaSprite('GO1', false);
+setProperty('GO1.alpha', 0.001)
+	
 makeLuaSprite('blackBars1', 'weah', 0, 0);
 makeGraphic('blackBars1', 1440, 720, '000000')
 addLuaSprite('blackBars1', false);
@@ -38,6 +62,28 @@ end
 
 function onSongStart()
 doTweenAlpha('the camera of the hud', 'camHUD', 1, 10, 'linear')
+end
+
+function onCountdownTick(counter)
+	if counter == 0 then
+	setProperty('31.alpha', 1)
+	doTweenAlpha('elpepe2', '31', 0, crochet / 1000, 'cubeInOut');
+	end
+	
+	if counter == 1 then  -- Ready
+	setProperty('ready1.alpha', 1)
+	doTweenAlpha('elpepe3', 'ready1', 0, crochet / 1000, 'cubeInOut');
+	end
+	
+	if counter == 2 then -- Set
+	setProperty('set1.alpha', 1)
+	doTweenAlpha('elpepe4', 'set1', 0, crochet / 1000, 'cubeInOut');
+	end
+	
+	if counter == 3 then -- GO
+	setProperty('GO1.alpha', 1)
+	doTweenAlpha('elpepe5', 'GO1', 0, crochet / 1000, 'cubeInOut');
+	end
 end
 
 function onUpdate()
@@ -174,8 +220,8 @@ function onSectionHit()
 	gameBeatZoom = false
 	cancelTween('bopping')
 	doTweenX("bopping", 'camHUD', 0, 0.75, 'sineInOut')
-	doTweenZoom("he zooms", 'camGame', 1.2, 1.3, 'sineIn')
-	doTweenAngle("rotate on a degree", 'camGame', 6, 1.3, 'sineIn')
+	doTweenZoom("he zooms", 'camGame', 1.2, 1.2, 'sineIn')
+	doTweenAngle("rotate on a degree", 'camGame', 6, 1.2, 'sineIn')
 	doTweenZoom("he zooms 2", 'camHUD', 1, 0.75, 'cubeOut')
 	setProperty('defaultCamZoom', 1)
 	end
