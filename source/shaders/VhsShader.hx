@@ -3,8 +3,8 @@ package shaders;
 import haxe.xml.Access;
 import flixel.system.FlxAssets.FlxShader;
 
-class vhsShader {
-  public var shader(default, null):vhsS = new vhsS();
+class VhsShader {
+  public var shader(default, null):VhsS = new VhsS();
   public var iTime(default, null):Float = 0;
 
   public function new(){
@@ -17,7 +17,7 @@ class vhsShader {
     return value;
   }
 }
-class vhsS extends FlxShader {
+class VhsS extends FlxShader {
     @:glFragmentSource('#pragma header
     
     uniform vec2 iResolution;
