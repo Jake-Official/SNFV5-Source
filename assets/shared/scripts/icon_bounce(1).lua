@@ -21,7 +21,7 @@ function onBeatHit()
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('playerIconTag', 'iconP1', 725-iconHeight, 0.15, 'circOut')
 			iconBounce = 2
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('playerIconTag', 'iconP1', 725-iconHeight, 0.15, 'circOut')
 			iconBounce = 2
 			elseif songName == "robotnik-ii" then
@@ -41,7 +41,7 @@ function onBeatHit()
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('playerIconTag', 'iconP1', -150-iconHeight, 0.15, 'circOut')
 			iconBounce = 2
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('playerIconTag', 'iconP1', -150-iconHeight, 0.15, 'circOut')
 			iconBounce = 2
 			elseif songName == "robotnik-ii" then
@@ -63,7 +63,7 @@ function onBeatHit()
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('opponentIconTag', 'iconP2', 725-iconHeight, 0.15, 'circOut')
 			iconBounce = 1
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('opponentIconTag', 'iconP2', 725-iconHeight, 0.15, 'circOut')
 			iconBounce = 1
 			elseif songName == "robotnik-ii" then
@@ -83,7 +83,7 @@ function onBeatHit()
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('opponentIconTag', 'iconP2', -150-iconHeight, 0.15, 'circOut')
 			iconBounce = 1
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('opponentIconTag', 'iconP2', -150-iconHeight, 0.15, 'circOut')
 			iconBounce = 1
 			elseif songName == "robotnik-ii" then
@@ -106,7 +106,7 @@ function onTweenCompleted(tag)
 			doTweenY('playerIconTagEnd', 'iconP1', 725, 0.15, 'circIn')
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('playerIconTagEnd', 'iconP1', 725, 0.15, 'circIn')
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('playerIconTagEnd', 'iconP1', 725, 0.15, 'circIn')
 			elseif songName == "robotnik-ii" then
 			doTweenY('playerIconTagEnd', 'iconP1', 725, 0.15, 'circIn')
@@ -120,7 +120,7 @@ function onTweenCompleted(tag)
 			doTweenY('playerIconTagEnd', 'iconP1', -150, 0.15, 'circIn')
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('playerIconTagEnd', 'iconP1', -150, 0.15, 'circIn')
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('playerIconTagEnd', 'iconP1', -150, 0.15, 'circIn')
 			elseif songName == "robotnik-ii" then
 			doTweenY('playerIconTagEnd', 'iconP1', -150, 0.15, 'circIn')
@@ -138,7 +138,7 @@ function onTweenCompleted(tag)
 			doTweenY('opponentIconTagEnd', 'iconP2', 725, 0.15, 'circIn')
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('opponentIconTagEnd', 'iconP2', 725, 0.15, 'circIn')
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('opponentIconTagEnd', 'iconP2', 725, 0.15, 'circIn')
 			elseif songName == "robotnik-ii" then
 			doTweenY('opponentIconTagEnd', 'iconP2', 725, 0.15, 'circIn')
@@ -152,7 +152,7 @@ function onTweenCompleted(tag)
 			doTweenY('opponentIconTagEnd', 'iconP2', -150, 0.15, 'circIn')
 			elseif songName == "Dithering Dingbots" then
 			doTweenY('opponentIconTagEnd', 'iconP2', -150, 0.15, 'circIn')
-			elseif songName == "Robotnik_ii" then
+			elseif songName == "Robotnik-ii" then
 			doTweenY('opponentIconTagEnd', 'iconP2', -150, 0.15, 'circIn')
 			elseif songName == "robotnik-ii" then
 			doTweenY('opponentIconTagEnd', 'iconP2', -150, 0.15, 'circIn')
