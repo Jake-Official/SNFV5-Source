@@ -3,7 +3,7 @@ package shaders;
 import haxe.xml.Access;
 import flixel.system.FlxAssets.FlxShader;
 
-class vhsShader {
+class VhsShader {
   public var shader(default, null):vhsS = new vhsS();
   public var iTime(default, null):Float = 0;
 
