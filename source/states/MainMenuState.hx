@@ -24,12 +24,7 @@ class MainMenuState extends MusicBeatState
 	var rightItem:FlxSprite;
 
 	//Centered/Text options
-	var optionShit:Array<String> = [
-		'story_mode',
-		'freeplay',
-		#if MODS_ALLOWED 'download', #end
-		'credits'
-	];
+	var optionShit:Array<String>;
 
 	var leftOption:String = #if ACHIEVEMENTS_ALLOWED 'achievements' #else null #end;
 	var rightOption:String = 'options';
@@ -44,6 +39,21 @@ class MainMenuState extends MusicBeatState
 		#end
 		Mods.loadTopMod();
 
+		#if web
+		optionsShit = ['story_mode',
+		'freeplay',
+		'download',
+		'credits'];
+		#elseif desktop
+		#if MODS_ALLOWED
+		optionsShit = [
+		'story_mode',
+		'freeplay',
+		'download',
+		'credits'
+		];
+		#end
+		#end
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
@@ -291,9 +301,15 @@ class MainMenuState extends MusicBeatState
 							case 'freeplay':
 								MusicBeatState.switchState(new FreeplayState());
 
-							#if MODS_ALLOWED
+							#if web
 							case 'download':
+								FlxG.openURL('https://gamebanana.com/mods/44194');
+								MusicBeatState.resetState();
+							#elseif desktop
+							#if MODS_ALLOWED
+							case 'mods':
 								MusicBeatState.switchState(new ModsMenuState());
+							#end
 							#end
 
 							#if ACHIEVEMENTS_ALLOWED
