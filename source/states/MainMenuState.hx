@@ -49,7 +49,7 @@ class MainMenuState extends MusicBeatState
 		optionsShit = [
 		'story_mode',
 		'freeplay',
-		'download',
+		'mods',
 		'credits'
 		];
 		#end
