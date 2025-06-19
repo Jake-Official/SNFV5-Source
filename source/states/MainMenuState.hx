@@ -45,11 +45,10 @@ class MainMenuState extends MusicBeatState
 		'download',
 		'credits'];
 		#elseif desktop
-		#if MODS_ALLOWED
 		optionsShit = [
 		'story_mode',
 		'freeplay',
-		'mods',
+		#if MODS_ALLOWED 'mods', #end
 		'credits'
 		];
 		#end
