@@ -6,9 +6,9 @@ name: html5build
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ pluey, main ]
+    branches: [ main ]
   pull_request:
-    branches: [ pluey, main ]
+    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,13 +27,13 @@ jobs:
 
       - uses: krdlab/setup-haxe@master
         with:
-          haxe-version: 4.3.0
+          haxe-version: 4.3.4
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null
-          haxelib install lime
+          haxelib install lime 136357
           haxelib install openfl
           haxelib --never install flixel 5.6.1
           haxelib run lime setup flixel
