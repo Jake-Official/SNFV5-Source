@@ -40,12 +40,12 @@ class MainMenuState extends MusicBeatState
 		Mods.loadTopMod();
 
 		#if web
-		optionsShit = ['story_mode',
+		optionShit = ['story_mode',
 		'freeplay',
 		'download',
 		'credits'];
 		#elseif desktop
-		optionsShit = [
+		optionShit = [
 		'story_mode',
 		'freeplay',
 		#if MODS_ALLOWED 'mods', #end
