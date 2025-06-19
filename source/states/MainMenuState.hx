@@ -52,7 +52,6 @@ class MainMenuState extends MusicBeatState
 		'credits'
 		];
 		#end
-		#end
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
