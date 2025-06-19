@@ -5,6 +5,7 @@ name: html5build
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
+  # lmfao i added something didn't pull up
   push:
     branches: [ main ]
   pull_request:
